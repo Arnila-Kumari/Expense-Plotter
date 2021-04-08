@@ -10,17 +10,17 @@ Aim: To make app for mannaging expenses
     * can mark goals as important and unimportant 
 4.Provides a chart/graph and analyse your performance
 ## Categories provided
-> Income
-> Entertainment
-> Food
-> Rent&Bills
-> Travel
-> Transport
-> Sport
-> Transfer
-> Materialistic Desire
-> Cash Withdrawal
-> Gifts
-> Groceries
-> Personal care
-> Other
+   1. Income
+   2. Entertainment
+   3. Food
+   4. Rent&Bills
+   5. Travel
+   6. Transport
+   7. Sport
+   8. Transfer
+   9. Materialistic Desire
+   10. Cash Withdrawal
+   11. Gifts
+   12. Groceries
+   13. Personal care
+   14. Other
