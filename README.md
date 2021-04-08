@@ -1,10 +1,26 @@
 # Project
 
-Aim: To download the daily space pictures posted on the NASA website using the API. Download it under the file name "Date-title of pic.jpg".
-three specifics:
+Aim: To make app for mannaging expenses
 
-    1. Getting the permissions for download
-    2. Accessing the API
-    3. Giving a preview of the pic of the day 
-    4. Asking for permission for it to be set as wallpaper
-    5. Finish the users request(abbort if "No" finish if "Yes")
+    1. Takes your basic salary and monthly bonuses if any and your current savings
+    2. Can take in goals as in what you want to save money for (can set goals so as to be able to buy extra one time investment things)
+    3. Will be able to give suggestions like:
+        1. How much percentage of money can be spent on one category.(all categories will be listed here [Categories provided](#categories-provided))
+        2. Where you can cut your expenses
+        3. can mark goals as important and unimportant 
+    4.Provides a chart/graph and analyse your performance
+## Categories provided
+    > Income
+    > Entertainment
+    > Food
+    > Rent&Bills
+    > Travel
+    > Transport
+    > Sport
+    > Transfer
+    > Materialistic Desire
+    > Cash Withdrawal
+    > Gifts
+    > Groceries
+    > Personal care
+    > Other
