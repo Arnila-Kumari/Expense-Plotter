@@ -1,6 +1,6 @@
 # Project
 
-Aim: To make app for mannaging expenses
+Aim: To make gui for mannaging expenses
 
 * Takes your basic salary and monthly bonuses if any and your current savings
 * Can take in goals as in what you want to save money for (can set goals so as to be able to buy extra one time investment things)
