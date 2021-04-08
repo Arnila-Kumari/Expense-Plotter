@@ -8,7 +8,7 @@ Aim: To make app for mannaging expenses
     * How much percentage of money can be spent on one category.(all categories will be listed here [Categories provided](#categories-provided))
     * Where you can cut your expenses
     * can mark goals as important and unimportant 
-4.Provides a chart/graph and analyse your performance
+* Provides a chart/graph and analyse your performance
 ## Categories provided
    1. Income
    2. Entertainment
