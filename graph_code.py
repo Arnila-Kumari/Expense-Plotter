@@ -13,7 +13,7 @@ params = [
    'Values', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 
 ]
 
-df = pd.read_csv("C:/Users/hp/Downloads/python/try.csv")
+df = pd.read_csv("dynamic dataset.csv")
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
