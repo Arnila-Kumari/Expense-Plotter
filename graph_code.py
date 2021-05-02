@@ -9,10 +9,6 @@ import plotly.express as px
 import dash
 import plotly.graph_objects as go
 
-params = [
-   'Values', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 
-]
-
 df = pd.read_csv("dynamic dataset.csv")
 print(df)
 app = dash.Dash(__name__)
