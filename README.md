@@ -5,8 +5,8 @@ Aim: To make a website for maintaining the expenses each month and representing 
 * Provides a well formed month wise chart/graph for you to analyse your epense performance.
 * What you will be able to analyse and what it takes:
     * Gives a table you can edit according to your set of details
-          * Here you can add a row or a column as and when you want.
-          * Can change the data of the table to update the graph
+        * Here you can add a row or a column as and when you want.
+        * Can change the data of the table to update the graph
     * Takes in different categories in expenditure as rows (examples given below [Categories provided](#categories-provided))
     * The graph can help you analyse where you can cut your expenses
     * Which category in which month is being spent most on...
