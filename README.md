@@ -1,4 +1,4 @@
-# Project
+# Expense Tracker
 
 Aim: To make a website for maintaining the expenses each month and representing in the graph.
 
