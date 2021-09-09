@@ -9,25 +9,28 @@ import plotly.express as px
 import dash
 import plotly.graph_objects as go
 
-df = pd.read_csv("dynamic dataset.csv")
+df = pd.read_csv("dynamic_dataset.csv")
 print(df)
 app = dash.Dash(__name__)
 
 df_temp = pd.DataFrame(df.to_dict('records'))
 melted = df_temp.melt('Expenditure', var_name='Months', value_name='Money')
 pixg = px.bar(melted, x="Months", y=["Money", "Expenditure"], color="Expenditure", barmode="group")
+new_data=pd.read_csv("Expense.csv")
+reg = px.scatter(new_data, x='Mthly_HH_Income', y='Mthly_HH_Expense', opacity=0.65,trendline='ols', trendline_color_override='darkblue')
+#  Layout of he page 
 app.layout = html.Div(
     [
     html.Div("Expense Plotter", className="name"),
     dash_table.DataTable(
-        id='table',
+        id='table',     
         columns=[{
             "name": i, 
             "id": i,
             'deletable':True,
             'renamable': True,
-        } for i in df.columns],
-        data=df.to_dict('records'),
+        } for i in df.columns],     # column properties
+        data= df.to_dict('records'),
         editable=True,
         row_deletable=True,
         export_format='csv',
@@ -53,16 +56,17 @@ app.layout = html.Div(
         style={'height': 50},
         className="left",
     ),
-    # html.Div(["Input: ", dcc.Input(id='my-input', value='10', type='number')]),
-    # html.Div(["Input: ", dcc.Input(id='my-input2', value='8', type='number')]),
-    
+
     html.Br(),
     dcc.Graph(
         id='graph',
         figure=pixg
     ),
-    # html.Div(id='my-output2'),
-    # html.Div(id='my-output3'),
+    html.Div("Expense Estimate Helper", className="name"),
+    dcc.Graph(
+        id='regression',
+        figure=reg
+    ),
     
     ],
     className = "contain"
@@ -77,10 +81,6 @@ def is_int(string_something):
 
 @app.callback(
     Output(component_id='graph', component_property='figure'),
-    # Output(component_id='my-output2', component_property='children'),
-    # Output(component_id='my-output3', component_property='children'),
-    # Input(component_id='my-input', component_property='value'),
-    # Input(component_id='my-input2', component_property='value'),
     Input('table', 'data')
 )
 def update_output_div(a):
