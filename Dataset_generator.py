@@ -53,6 +53,5 @@ for i in range(100):
     d=limited(monthly)
     minlimit, maxlimit, estimate = d[0], d[1] ,d[2]
     data_entry(monthly)
-print(maxlimit,minlimit)
 
         
